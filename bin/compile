@@ -4,3 +4,4 @@ echo "-----> Installing screen... "
 apt-get -y update | indent
 apt-get -y --force-yes -d install --reinstall screen | indent
 echo "done"
+mkdir -p $1/.apt/var/run/screen
