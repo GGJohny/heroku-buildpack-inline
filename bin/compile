@@ -1,6 +1,6 @@
 #!/bin/sh
 # Usage: bin/compile <build-dir> <cache-dir> <env-dir>
 echo "-----> Installing screen... "
-apt-get -y update
-apt-get -y install screen
+apt-get -y update | indent
+apt-get -y --force-yes -d install --reinstall screen | indent
 echo "done"
